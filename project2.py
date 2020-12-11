@@ -10,7 +10,7 @@ def isPasswordValid(pstring, char, firstIndex, secondIndex):
 	else:
 		return True
 
-# read file and parse each line, the validate password
+# read file and parse each line, then validate password
 with open('password_input.txt') as f:
 	for line in f:
 		lineSplit = line.split(":");
