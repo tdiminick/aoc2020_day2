@@ -1,5 +1,6 @@
 validPasswordCount = 0
 
+# returns int
 def count(pstring, char):
 	cnt = 0
 	for i in pstring:
@@ -8,7 +9,7 @@ def count(pstring, char):
 
 	return cnt
 
-# read file and add each number to an array
+# read file and parse each line, then validate password
 with open('password_input.txt') as f:
 	for line in f:
 		lineSplit = line.split(":");
